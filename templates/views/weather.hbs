@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href="./css/styles.css">  
+        <link rel='icon' href="./img/icon.jpg">
+        <title>
+            Weather
+        </title>
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h2>Weather for location: {{location}} </h2>
+             <h2>is {{curr_weather}} </h2>
+        </div>
+        {{>footer}}
+    </body>
+</html>

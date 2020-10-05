@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='icon' href="./img/icon.jpg">
+        <link rel='stylesheet' href="./css/styles.css">
+        <title>
+            Help Page
+        </title>
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+        =======================================
+            <h2>Name:{{owner.[0].name}}</h2>
+            <h2>Age:  {{owner.[0].age}}</h2>
+            ====================================
+            <h2>Name: {{owner.[1].name}}</h2>
+            <h2>Age:  {{owner.[1].age}}</h2>
+           
+            {{#each owner}}
+                Name: {{this.name}} | Age : {{this.age}}
+            {{/each}}
+         </div>   
+            {{>footer}}
+    </body>
+</html>
